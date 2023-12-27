@@ -24,11 +24,11 @@ if [ -e "$packDirectory/terrain.png" ]; then
 fi
 
 if [ -e "$packDirectory/clouds.png" ]; then
-    mv -fv "$packDirectory/clouds.png" "$CavEX/assets/environment"
+    mv -fv "$packDirectory/clouds.png" "$CavEX/assets/environment/"
 fi
 
 if [ -e "$packDirectory/sun.png" ] && [ -e "$packDirectory/moon.png" ]; then
-    mv -fv "$packDirectory/sun.png" "$packDirectory/moon.png" "$destinationDirectory"
+    mv -fv "$packDirectory/sun.png" "$packDirectory/moon.png" "$CavEX/assets/terrain/"
 fi
 
 echo -e "Patched successfully."
