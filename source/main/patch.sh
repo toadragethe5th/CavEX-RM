@@ -21,14 +21,17 @@ CavEX="$HOME/$folderName"
 
 if [ -e "$packDirectory/terrain.png" ]; then
     mv -fv "$packDirectory/terrain.png" "$CavEX/assets/"
+    echo -e "Overrode 1 file."
 fi
 
 if [ -e "$packDirectory/clouds.png" ]; then
     mv -fv "$packDirectory/clouds.png" "$CavEX/assets/environment/"
+    echo -e "Overrode 1 file."
 fi
 
 if [ -e "$packDirectory/sun.png" ] && [ -e "$packDirectory/moon.png" ]; then
     mv -fv "$packDirectory/sun.png" "$packDirectory/moon.png" "$CavEX/assets/terrain/"
+    echo -e "Overrode 2 files."
 fi
 
 echo -e "Patched successfully. Exiting."
