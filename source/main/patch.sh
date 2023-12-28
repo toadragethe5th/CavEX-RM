@@ -11,7 +11,7 @@ fi
 
 read -p "Please choose your pack: Faithful, [option_2], [option_3]. TYPE YOUR ANSWER EXACTLY THE SAME AS THE CHOICE!" pack
 
-if [ "$pack" != "Faithful" ] || [ "$pack" != "option_2" ] || [ "$pack" != "option_3" ] || [ -z "$pack" ] then
+if [ "$pack" != "Faithful" ] && [ "$pack" != "option_2" ] && [ "$pack" != "option_3" ] || [ -z "$pack" ]; then
     echo "Invalid pack selection. Exiting."
     exit 1
 fi
