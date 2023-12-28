@@ -9,7 +9,7 @@ if [ -z "$folderName" ]; then
     exit 1
 fi
 
-read -p "Please choose your pack: Faithful, [option_2], [option_3]. TYPE YOUR ANSWER EXACTLY THE SAME AS THE CHOICE!" pack
+read -p "Please choose your pack: Faithful, BetaFine, [option_3]. TYPE YOUR ANSWER EXACTLY THE SAME AS THE CHOICE!" pack
 
 if [ "$pack" != "Faithful" ] && [ "$pack" != "option_2" ] && [ "$pack" != "option_3" ] || [ -z "$pack" ]; then
     echo "Invalid pack selection. Exiting."
@@ -31,4 +31,5 @@ if [ -e "$packDirectory/sun.png" ] && [ -e "$packDirectory/moon.png" ]; then
     mv -fv "$packDirectory/sun.png" "$packDirectory/moon.png" "$CavEX/assets/terrain/"
 fi
 
-echo -e "Patched successfully."
+echo -e "Patched successfully. Exiting."
+exit 0
