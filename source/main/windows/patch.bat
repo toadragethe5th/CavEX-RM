@@ -11,9 +11,9 @@ if not defined folderName (
     exit /b 1
 )
 
-set /p "pack=Please choose your pack: Faithful, BetaFine, [option_3]. TYPE YOUR ANSWER EXACTLY THE SAME AS THE CHOICE! "
+set /p "pack=Please choose your pack: Faithful, BetaFine. TYPE YOUR ANSWER EXACTLY THE SAME AS THE CHOICE! "
 
-if /i "%pack%" neq "Faithful" if /i "%pack%" neq "BetaFine" if /i "%pack%" neq "option_3" (
+if /i "%pack%" neq "Faithful" if /i "%pack%" neq "BetaFine" (
     echo Invalid pack selection. Exiting.
     exit /b 1
 )
