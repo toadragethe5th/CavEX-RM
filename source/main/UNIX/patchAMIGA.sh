@@ -1,6 +1,6 @@
 ; Amiga CLI Script
 ; Save this file with a .sh extension, e.g., patch.sh
-
+; it is amazing how similiar and at the same time how different this is from regular shell script. It feels archaic, almost like assembly.
 CD RAM:
 Echo "Welcome."
 Input "Please input the name (NOT THE PATH) of the folder containing your CavEX download: " folderName
