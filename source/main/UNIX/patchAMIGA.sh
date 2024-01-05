@@ -10,9 +10,9 @@ If $folderName EQ ""
     Quit 1
 EndIf
 
-Input "Please choose your pack: Faithful, BetaFine. TYPE YOUR ANSWER EXACTLY THE SAME AS THE CHOICE!" pack
+Input "Please choose your pack: Faithful, BetaFine, Alpha. TYPE YOUR ANSWER EXACTLY THE SAME AS THE CHOICE!" pack
 
-If $pack NE "Faithful" AND $pack NE "BetaFine" OR $pack EQ ""
+If $pack NE "Faithful" AND $pack NE "BetaFine" AND $pack NE "Alpha" OR $pack EQ ""
     Echo "Invalid pack selection. Exiting."
     Quit 1
 EndIf
