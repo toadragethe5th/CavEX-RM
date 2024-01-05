@@ -9,9 +9,9 @@ if [ -z "$folderName" ]; then
     exit 1
 fi
 
-read -p "Please choose your pack: Faithful, BetaFine. TYPE YOUR ANSWER EXACTLY THE SAME AS THE CHOICE!" pack
+read -p "Please choose your pack: Faithful, BetaFine, Alpha. TYPE YOUR ANSWER EXACTLY THE SAME AS THE CHOICE!" pack
 
-if [ "$pack" != "Faithful" ] && [ "$pack" != "BetaFine" ] || [ -z "$pack" ]; then
+if [ "$pack" != "Faithful" ] && [ "$pack" != "BetaFine" ] && [ "$pack" != Alpha] || [ -z "$pack" ]; then
     echo "Invalid pack selection. Exiting."
     exit 1
 fi
