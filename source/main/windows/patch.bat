@@ -13,7 +13,7 @@ if not defined folderName (
 
 set /p "pack=Please choose your pack: Faithful, BetaFine. TYPE YOUR ANSWER EXACTLY THE SAME AS THE CHOICE! "
 
-if /i "%pack%" neq "Faithful" if /i "%pack%" neq "BetaFine" (
+if /i "%pack%" neq "Faithful" if /i "%pack%" neq "BetaFine" if /i "%pack%" neq "Alpha" (
     echo Invalid pack selection. Exiting.
     exit /b 1
 )
