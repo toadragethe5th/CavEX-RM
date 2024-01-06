@@ -1,3 +1,4 @@
+; it actually wasn't that hard to find documentation on this
 ; Amiga CLI Script
 ; Save this file with a .sh extension, e.g., patch.sh
 ; it is amazing how similiar and at the same time how different this is from regular shell script. It feels archaic, almost like assembly.
